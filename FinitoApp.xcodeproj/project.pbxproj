@@ -12,6 +12,7 @@
 		0713DFD02037D66D00773430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0713DFCE2037D66D00773430 /* Main.storyboard */; };
 		0713DFD22037D66D00773430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0713DFD12037D66D00773430 /* Assets.xcassets */; };
 		0713DFD52037D66D00773430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0713DFD32037D66D00773430 /* LaunchScreen.storyboard */; };
+		982427A2203D1FC30024CFBF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982427A1203D1FC30024CFBF /* SecondViewController.swift */; };
 		9C2EF1DCF245A3BA9976B4B5 /* Pods_FinitoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3EEFD20D41EE279094B532 /* Pods_FinitoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		0713DFD42037D66D00773430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0713DFD62037D66D00773430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D3EEFD20D41EE279094B532 /* Pods_FinitoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinitoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982427A1203D1FC30024CFBF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = "/Users/Scareb/Documents/IOS Development/Finito_IOS/FinitoApp/SecondViewController.swift"; sourceTree = "<absolute>"; };
 		A75FB1236D4B92735835FFB1 /* Pods-FinitoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinitoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinitoApp/Pods-FinitoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B3992EF4D7ED9C1249D5BCE1 /* Pods-FinitoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinitoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinitoApp/Pods-FinitoApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				0713DFCC2037D66D00773430 /* ViewController.swift */,
 				0713DFCE2037D66D00773430 /* Main.storyboard */,
 				0713DFD12037D66D00773430 /* Assets.xcassets */,
+				982427A1203D1FC30024CFBF /* SecondViewController.swift */,
 				0713DFD32037D66D00773430 /* LaunchScreen.storyboard */,
 				0713DFD62037D66D00773430 /* Info.plist */,
 			);
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				982427A2203D1FC30024CFBF /* SecondViewController.swift in Sources */,
 				0713DFCD2037D66D00773430 /* ViewController.swift in Sources */,
 				0713DFCB2037D66D00773430 /* AppDelegate.swift in Sources */,
 			);

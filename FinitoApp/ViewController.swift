@@ -9,9 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var Create_Login: UIButton!
     
+    @IBOutlet weak var text: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +22,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//       let destinationVC = segue.destination as! SecondViewController
+//        destinationVC.textPassedOver = text.text!
+//}
 
 }
-
-    
