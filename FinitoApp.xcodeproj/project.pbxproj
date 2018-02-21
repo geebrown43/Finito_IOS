@@ -12,6 +12,7 @@
 		0713DFD02037D66D00773430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0713DFCE2037D66D00773430 /* Main.storyboard */; };
 		0713DFD22037D66D00773430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0713DFD12037D66D00773430 /* Assets.xcassets */; };
 		0713DFD52037D66D00773430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0713DFD32037D66D00773430 /* LaunchScreen.storyboard */; };
+		9C2EF1DCF245A3BA9976B4B5 /* Pods_FinitoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3EEFD20D41EE279094B532 /* Pods_FinitoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0713DFD12037D66D00773430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0713DFD42037D66D00773430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0713DFD62037D66D00773430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3EEFD20D41EE279094B532 /* Pods_FinitoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinitoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75FB1236D4B92735835FFB1 /* Pods-FinitoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinitoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinitoApp/Pods-FinitoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B3992EF4D7ED9C1249D5BCE1 /* Pods-FinitoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinitoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinitoApp/Pods-FinitoApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C2EF1DCF245A3BA9976B4B5 /* Pods_FinitoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		057236B9BDF17D1869CF8CC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D3EEFD20D41EE279094B532 /* Pods_FinitoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0713DFBE2037D66C00773430 = {
 			isa = PBXGroup;
 			children = (
 				0713DFC92037D66D00773430 /* FinitoApp */,
 				0713DFC82037D66D00773430 /* Products */,
+				469339A0ABD61D3FC0CB4C1C /* Pods */,
+				057236B9BDF17D1869CF8CC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = FinitoApp;
 			sourceTree = "<group>";
 		};
+		469339A0ABD61D3FC0CB4C1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A75FB1236D4B92735835FFB1 /* Pods-FinitoApp.debug.xcconfig */,
+				B3992EF4D7ED9C1249D5BCE1 /* Pods-FinitoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0713DFD92037D66D00773430 /* Build configuration list for PBXNativeTarget "FinitoApp" */;
 			buildPhases = (
+				D4B2D6735D158B61CA89E79E /* [CP] Check Pods Manifest.lock */,
 				0713DFC32037D66D00773430 /* Sources */,
 				0713DFC42037D66D00773430 /* Frameworks */,
 				0713DFC52037D66D00773430 /* Resources */,
+				1905830BB23D666BBABF9901 /* [CP] Embed Pods Frameworks */,
+				7EA37893EAC91EBAFFB0E13C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1905830BB23D666BBABF9901 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FinitoApp/Pods-FinitoApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinitoApp/Pods-FinitoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EA37893EAC91EBAFFB0E13C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinitoApp/Pods-FinitoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4B2D6735D158B61CA89E79E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinitoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0713DFC32037D66D00773430 /* Sources */ = {
@@ -272,6 +355,7 @@
 		};
 		0713DFDA2037D66D00773430 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A75FB1236D4B92735835FFB1 /* Pods-FinitoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +371,7 @@
 		};
 		0713DFDB2037D66D00773430 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3992EF4D7ED9C1249D5BCE1 /* Pods-FinitoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
